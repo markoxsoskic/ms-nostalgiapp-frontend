@@ -14,7 +14,7 @@ export default function PostPage() {
     const getPost = async () => {
 
         try {
-            await fetch(`https://ms-nostalgiapp-backend.onrender.com/main/${params.id}/post/${params.post}`, {
+            await fetch(`https://ms-nostalgiapp-backend-z7d4.onrender.com/main/${params.id}/post/${params.post}`, {
                 method: "GET",
                 headers: {
                     "Content-Type": "application/json"

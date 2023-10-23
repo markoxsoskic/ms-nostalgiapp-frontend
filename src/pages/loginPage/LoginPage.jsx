@@ -25,7 +25,7 @@ export default function LoginPage() {
         }
 
         if (email && password) {
-            const checkedUser = await fetch("https://ms-nostalgiapp-backend.onrender.com/auth/login", {
+            const checkedUser = await fetch("https://ms-nostalgiapp-backend-z7d4.onrender.com/auth/login", {
                 method: "POST",
                 headers: { "Content-Type": "application/json" },
                 body: JSON.stringify(user)
@@ -40,7 +40,7 @@ export default function LoginPage() {
                 { loggedUser.loggedUser && navigate(`/ms-nostalgiapp-frontend/main/${loggedUser.loggedUser._id}`) };
             } else {
                 setIsLoggedIn(false);
-                const checkedUser = await fetch("https://ms-nostalgiapp-backend.onrender.com/auth/login", {
+                const checkedUser = await fetch("https://ms-nostalgiapp-backend-z7d4.onrender.com/auth/login", {
                     method: "POST",
                     headers: { "Content-Type": "application/json" },
                     body: JSON.stringify(user)

@@ -23,7 +23,7 @@ export default function MainPage() {
 
         // check whether the user is actually logged in:
 
-        fetch("https://ms-nostalgiapp-backend.onrender.com/auth/find/" + params.id, {
+        fetch("https://ms-nostalgiapp-backend-z7d4.onrender.com/auth/find/" + params.id, {
             method: "GET",
             headers: {
                 "Content-Type": "application/json"
@@ -40,7 +40,7 @@ export default function MainPage() {
         // if yes, then:
 
         setIsLoggedIn(true);
-        fetch("https://ms-nostalgiapp-backend.onrender.com/main/" + params.id, {
+        fetch("https://ms-nostalgiapp-backend-z7d4.onrender.com/main/" + params.id, {
             method: "GET",
             headers: {
                 "Content-Type": "application/json"
@@ -56,7 +56,7 @@ export default function MainPage() {
 
     async function handleLogout() {
         try {
-            fetch(`https://ms-nostalgiapp-backend.onrender.com/auth/${params.id}/logout`, {
+            fetch(`https://ms-nostalgiapp-backend-z7d4.onrender.com/auth/${params.id}/logout`, {
                 method: "POST"
             }).then(() => {
                 setIsLoggedIn(false);
@@ -69,7 +69,7 @@ export default function MainPage() {
 
     async function handleDelete(id) {
         try {
-            fetch(`https://ms-nostalgiapp-backend.onrender.com/main/${params.id}/delete/${id}`, {
+            fetch(`https://ms-nostalgiapp-backend-z7d4.onrender.com/main/${params.id}/delete/${id}`, {
                 method: "DELETE",
                 headers: {
                     "Content-Type": "application/json"
@@ -91,7 +91,7 @@ export default function MainPage() {
 
     async function handleRead(id) {
         try {
-            fetch(`https://ms-nostalgiapp-backend.onrender.com/main/${params.id}/post/${id}`, {
+            fetch(`https://ms-nostalgiapp-backend-z7d4.onrender.com/main/${params.id}/post/${id}`, {
                 method: "GET",
                 headers: {
                     "Content-Type": "application/json"
@@ -113,7 +113,7 @@ export default function MainPage() {
         setDeletePopUp(false);
         setDeleteAccount(true);
         try {
-            fetch(`https://ms-nostalgiapp-backend.onrender.com/auth/${params.id}/close`, {
+            fetch(`https://ms-nostalgiapp-backend-z7d4.onrender.com/auth/${params.id}/close`, {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json"
@@ -132,7 +132,7 @@ export default function MainPage() {
     }
 
     function handleSearch() {
-        fetch("https://ms-nostalgiapp-backend.onrender.com/main/" + params.id, {
+        fetch("https://ms-nostalgiapp-backend-z7d4.onrender.com/main/" + params.id, {
             method: "GET",
             headers: {
                 "Content-Type": "application/json"
@@ -154,7 +154,7 @@ export default function MainPage() {
     }
 
     function handleRestart() {
-        fetch("https://ms-nostalgiapp-backend.onrender.com/main/" + params.id, {
+        fetch("https://ms-nostalgiapp-backend-z7d4.onrender.com/main/" + params.id, {
             method: "GET",
             headers: {
                 "Content-Type": "application/json"

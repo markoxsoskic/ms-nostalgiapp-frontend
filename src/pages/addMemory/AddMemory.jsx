@@ -20,10 +20,10 @@ export default function AddMemory() {
 
     function handleChange(e) {
         let code = "abc" + Math.floor(Math.random() * 692384436334) + "def" + Date.now() + "ghi" + Math.floor(Math.random() * 721389829);
-        setUrl(`https://ms-nostalgiapp-backend.onrender.com/uploads/${code}.jpeg`);
+        setUrl(`https://ms-nostalgiapp-backend-z7d4.onrender.com/uploads/${code}.jpeg`);
         let formData = new FormData();
         formData.append("image", e.target.files[0]);
-        fetch(`https://ms-nostalgiapp-backend.onrender.com/image/${code}`, {
+        fetch(`https://ms-nostalgiapp-backend-z7d4.onrender.com/image/${code}`, {
             method: "POST",
             body: formData
         }).then(res => res.json())
@@ -42,7 +42,7 @@ export default function AddMemory() {
                 date: date,
                 description: description,
             }
-            fetch(`https://ms-nostalgiapp-backend.onrender.com/main/${params.id}`, {
+            fetch(`https://ms-nostalgiapp-backend-z7d4.onrender.com/main/${params.id}`, {
                 method: "POST",
                 headers: { "Content-Type": "application/json" },
                 body: JSON.stringify(memory),

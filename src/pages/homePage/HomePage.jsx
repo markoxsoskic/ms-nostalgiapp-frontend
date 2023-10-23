@@ -29,7 +29,7 @@ export default function HomePage() {
         }
 
         if (firstName && lastName && email && password && location) {
-            await fetch("https://ms-nostalgiapp-backend.onrender.com/auth/register", {
+            await fetch("https://ms-nostalgiapp-backend-z7d4.onrender.com/auth/register", {
                 method: "POST",
                 headers: { "Content-Type": "application/json" },
                 body: JSON.stringify(user)
