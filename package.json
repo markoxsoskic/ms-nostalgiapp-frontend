@@ -1,8 +1,8 @@
 {
-  "homepage": "http://markososkic.github.io/ms-nostalgiapp-frontend",
+  "homepage": "http://markoxsoskic.github.io/ms-nostalgiapp-frontend",
   "name": "frontend",
   "version": "0.1.0",
-  "proxy": "https://ms-nostalgiapp-backend.onrender.com/",
+  "proxy": "https://ms-nostalgiapp-backend-z7d4.onrender.com/",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",
