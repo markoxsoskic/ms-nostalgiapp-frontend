@@ -1,0 +1,55 @@
+section#light.errorpage-panel {
+    align-items: center;
+    background-color: whitesmoke;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: space-evenly;
+    padding: 25vh 0 5vh 0;
+    text-align: center;
+    width: 100%;
+}
+
+section#light.errorpage-panel div {
+    background-color: whitesmoke;
+    border-radius: 0.5rem;
+    box-shadow: 0 0 30px 0 #e2e2e2;
+    display: flex;
+    flex-direction: column;
+    padding: 1.5rem;
+    width: 50%;
+}
+
+.errorpage-panel a {
+    color: #059c9c;
+    font-size: 0.8rem;
+    text-decoration: none;
+}
+
+
+
+/* dark mode */
+
+section#dark.errorpage-panel {
+    align-items: center;
+    background-color: #333333;
+    color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: space-evenly;
+    padding: 25vh 0 5vh 0;
+    text-align: center;
+    width: 100%;
+}
+
+section#dark.errorpage-panel div {
+    background-color: #181818;
+    border-radius: 0.5rem;
+    box-shadow: 0 0 30px 0 #1f1f1f;
+    display: flex;
+    flex-direction: column;
+    padding: 1.5rem;
+    width: 50%;
+}

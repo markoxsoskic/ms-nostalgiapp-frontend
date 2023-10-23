@@ -1,0 +1,212 @@
+.deletePopUp {
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.85);
+    display: flex;
+    font-size: 0.8rem;
+    height: 70vh;
+    justify-content: center;
+    left: 0;
+    position: fixed;
+    top: 25vh;
+    width: 100%;
+    z-index: 100;
+}
+
+.deletePopUp .popUp {
+    align-items: center;
+    background-color: #e2e2e2;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    height: 25%;
+    justify-content: space-evenly;
+    padding: 1rem;
+    width: 50%;
+}
+
+.deletePopUp .popUp p {
+    font-size: 0.8rem;
+    text-align: center;
+}
+
+.deletePopUp .finalAnswer {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+.deletePopUp .finalAnswer button {
+    color: whitesmoke;
+    cursor: pointer;
+    border: none;
+    border-radius: 0.5rem;
+    height: 1.5rem;
+    width: 25%;
+}
+
+.yes {
+    background-color: #b16873;
+    font-size: 0.8rem;
+}
+
+.no {
+    background-color: #21758d;
+    font-size: 0.8rem;
+}
+
+.status {
+    align-items: center;
+    background: linear-gradient(90deg, #21758d, #b16873);
+    color: whitesmoke;
+    display: flex;
+    height: 10vh;
+    justify-content: space-between;
+    position: fixed;
+    top: 15vh;
+    padding: 1rem 6vmax;
+    width: 100%;
+    z-index: 100;
+}
+
+.status .leftBox {
+    align-items: center;
+    display: flex;
+    justify-content: flex-start;
+    width: 50%;
+}
+
+.status .leftBox a {
+    color: whitesmoke;
+    font-size: 0.8rem;
+    margin-right: 1rem;
+}
+
+.status .leftBox input {
+    background-color: transparent;
+    border: 1px solid whitesmoke;
+    border-radius: 0.5vmax;
+    color: whitesmoke;
+    font-size: 0.8rem;
+    height: 3.5vh;
+    padding-left: 0.5rem;
+    width: 100%;
+}
+
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-results-button,
+input[type="search"]::-webkit-search-results-decoration {
+  display: none;
+}
+
+.status .leftBox input::placeholder {
+    color: whitesmoke;
+    font-size: 0.75rem;
+    opacity: 0.5;
+}
+
+.status .leftBox .search-button,
+.status .leftBox .restart-button {
+    background-color: transparent;
+    border: none;
+    color: whitesmoke;
+    cursor: pointer;
+    font-size: 0.8rem;
+    margin-left: 1rem;
+}
+
+.status .rightBox {
+    align-items: center;
+    display: flex;
+    justify-content: flex-end;
+    width: 50%;
+}
+
+.status .rightBox p {
+    color: whitesmoke;
+    font-size: 0.8rem;
+}
+
+.status .rightBox button {
+    background-color: transparent;
+    border: none;
+    color: whitesmoke;
+    cursor: pointer;
+    font-size: 0.8rem;
+    margin-left: 1rem;
+}
+
+.memory-cards#light {
+    display: grid;
+    place-items: center center;
+    grid-template-columns: repeat(auto-fit, minmax(275px, 1fr));
+    padding: 20px;
+    grid-gap: 40px;
+    padding: 30vh 6vmax 10vh;
+    min-height: 100vh;
+}
+
+.memory-cards#light .card {
+    background-color: #e2e2e2;
+    border-radius: 1rem;
+    transition: ease-in-out 0.15s;
+
+}
+
+.memory-cards p {
+    color: #21758d;
+    font-size: 1vmax;
+    z-index: 50;
+}
+
+
+
+
+/* dark mode */
+
+.memory-cards#dark {
+    background-color: #333333;
+    display: grid;
+    place-items: center center;
+    grid-template-columns: repeat(auto-fit, minmax(275px, 1fr));
+    padding: 20px;
+    grid-gap: 40px;
+    padding: 30vh 6vmax 10vh;
+    min-height: 100vh;
+}
+
+.memory-cards#dark .card {
+    background-color: #181818;
+    border-radius: 1rem;
+    transition: ease-in-out 0.15s;
+
+}
+
+
+
+
+
+@media(min-width:1366px) {
+    .card:hover {
+        transform: rotate(2deg);
+    }
+}
+
+@media (max-width:1024px) {
+
+    .deletePopUp .popUp {
+        width: 75%;
+    }
+
+    .status .leftBox {
+        width: 75%;
+    }
+
+    .status .rightBox {
+        width: 25%;
+    }
+
+    .status .rightBox p {
+        display: none;
+    }
+}

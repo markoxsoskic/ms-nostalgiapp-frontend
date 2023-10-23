@@ -1,0 +1,218 @@
+section#light.addMemory-panel {
+    align-items: center;
+    background-color: whitesmoke;
+    color: #181818;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: space-evenly;
+    padding: 20vh 0 10vh 0;
+    width: 100%;
+}
+
+section#light.addMemory-panel form {
+    background-color: whitesmoke;
+    border-radius: 0.5rem;
+    box-shadow: 0 0 30px 0 #e2e2e2;
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    width: 50%;
+}
+
+section#light.addMemory-panel form .fileInputs {
+    position: relative;
+    width: 100%;
+}
+
+section#light.addMemory-panel form input {
+    background-color: #e2e2e2;
+    border: none;
+    border-radius: 0.5rem;
+    color: black;
+    font-size: 0.8rem;
+    height: 2rem;
+    margin-bottom: 1rem;
+    text-indent: 1rem;
+    width: 100%;
+}
+
+.fakeFileInput {
+    margin-bottom: 0;
+    position: absolute;
+    z-index: 0;
+}
+
+.realFileInput {
+    cursor: pointer;
+    margin-bottom: 0;
+    opacity: 0;
+    position: relative;
+    z-index: 5;
+}
+
+section#light.addMemory-panel form input::placeholder {
+    color: #181818;
+    font-family: 'Rubik', sans-serif;
+    font-size: 0.8rem;
+    opacity: 0.5;
+}
+
+section#light.addMemory-panel form input[type="date"]::-webkit-calendar-picker-indicator {
+    display: none;
+}
+
+section#light.addMemory-panel form input[type="date"],
+section#light.addMemory-panel form input[type="file"] {
+    background-color: #e2e2e2;
+    border: none;
+    border-radius: 0.5rem;
+    color: rgba(0, 0, 0, 0.5);
+    font-family: 'Rubik', sans-serif;
+    font-size: 0.8rem;
+    height: 2rem;
+    padding-left: 1rem;
+    text-indent: 0;
+    width: 100%;
+}
+
+section#light.addMemory-panel form textarea {
+    background-color: #e2e2e2;
+    border: none;
+    border-radius: 0.5rem;
+    color: black;
+    font-family: 'Rubik', sans-serif;
+    font-size: 0.8rem;
+    margin-bottom: 1rem;
+    padding: 1rem;
+    resize: none;
+}
+
+section#light.addMemory-panel form textarea::placeholder {
+    color: black;
+    font-family: 'Rubik', sans-serif;
+    font-size: 0.8rem;
+    opacity: 0.5;
+}
+
+form button {
+    background: linear-gradient(90deg, #21758d, #b16873);
+    border: none;
+    border-radius: 0.5rem;
+    color: whitesmoke;
+    font-size: 0.8rem;
+    font-weight: 700;
+    height: 2rem;
+    transition: ease-in-out 0.5s;
+}
+
+form button:hover {
+    opacity: 0.5;
+}
+
+a.close {
+    color: #21758d;
+    font-size: 0.8rem;
+    position: absolute;
+    right: 6vmax;
+    text-decoration: none;
+    top: 20vh;
+}
+
+
+
+/* dark mode */
+
+section#dark.addMemory-panel {
+    align-items: center;
+    background-color: #333333;
+    color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: space-evenly;
+    padding: 20vh 0 10vh 0;
+    width: 100%;
+}
+
+section#dark.addMemory-panel form {
+    background-color: #333333;
+    border-radius: 0.5rem;
+    box-shadow: 0 0 30px 0 #1f1f1f;
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    width: 50%;
+}
+
+section#dark.addMemory-panel form .fileInputs {
+    position: relative;
+    width: 100%;
+}
+
+section#dark.addMemory-panel form input {
+    background-color: #181818;
+    border: none;
+    border-radius: 0.5rem;
+    color: whitesmoke;
+    font-size: 0.8rem;
+    height: 2rem;
+    margin-bottom: 1rem;
+    text-indent: 1rem;
+    width: 100%;
+}
+
+section#dark.addMemory-panel form input::placeholder {
+    color: whitesmoke;
+    font-family: 'Rubik', sans-serif;
+    font-size: 0.8rem;
+    opacity: 0.5;
+}
+
+section#dark.addMemory-panel form input[type="date"]::-webkit-calendar-picker-indicator {
+    display: none;
+}
+
+section#dark.addMemory-panel form input[type="date"],
+section#dark.addMemory-panel form input[type="file"] {
+    background-color: #181818;
+    border: none;
+    border-radius: 0.5rem;
+    color: rgba(245, 245, 245, 0.5);
+    font-family: 'Rubik', sans-serif;
+    font-size: 0.8rem;
+    height: 2rem;
+    padding-left: 1rem;
+    text-indent: 0;
+    width: 100%;
+}
+
+section#dark.addMemory-panel form textarea {
+    background-color: #181818;
+    border: none;
+    border-radius: 0.5rem;
+    color: whitesmoke;
+    font-family: 'Rubik', sans-serif;
+    font-size: 0.8rem;
+    margin-bottom: 1rem;
+    padding: 1rem;
+    resize: none;
+}
+
+section#dark.addMemory-panel form textarea::placeholder {
+    color: whitesmoke;
+    font-family: 'Rubik', sans-serif;
+    opacity: 0.5;
+}
+
+
+
+
+
+@media (max-width:1024px) {
+
+    section#light.addMemory-panel form,
+    section#dark.addMemory-panel form {
+        width: 75%;
+    }
+}

@@ -1,0 +1,88 @@
+.memory#light {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    position: relative;
+    transition: ease-in-out 0.15s
+}
+
+.memory img {
+    border-radius: 1rem;
+    height: 300px;
+    object-fit: cover;
+    width: 300px;
+}
+
+.memory-info {
+    display: flex;
+    flex-direction: column;
+    height: 40%;
+    justify-content: space-around;
+    padding: 1rem;
+    width: 100%;
+}
+
+.memory-info h2 {
+    font-size: 1.25rem;
+}
+
+.memory-location-date {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    font-weight: bolder;
+    justify-content: space-between;
+}
+
+.memory-location-date p {
+    color: #21758d;
+    font-size: 0.8rem;
+}
+
+.memory-description {
+    font-size: 0.8rem;
+    margin-top: 10px;
+}
+
+.memory-links {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 10px;
+    width: 100%;
+}
+
+.memory-links a {
+    color: #21758d;
+    font-size: 0.8rem;
+}
+
+.read-more,
+.delete {
+    align-items: center;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    font-size: 0.8rem;
+    height: 1.5rem;
+    justify-content: center;
+    text-align: center;
+    text-decoration: none;
+    width: auto;
+}
+
+.memory#light .delete {
+    color: black;
+}
+
+
+
+/* dark mode */
+
+.memory#dark {
+    color: whitesmoke;
+}
+
+.memory#dark .delete {
+    color: whitesmoke;
+}

@@ -1,0 +1,114 @@
+section#light.login-panel {
+    align-items: center;
+    background-color: whitesmoke;
+    color: #181818;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: space-evenly;
+    padding: 25vh 0 10vh 0;
+    width: 100%;
+}
+
+section#light.login-panel form {
+    background-color: whitesmoke;
+    border-radius: 0.5rem;
+    box-shadow: 0 0 30px 0 #e2e2e2;
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    width: 50%;
+}
+
+section#light.login-panel form input {
+    background-color: #e2e2e2;
+    border: none;
+    border-radius: 0.5rem;
+    color: black;
+    font-size: 0.8rem;
+    height: 2rem;
+    margin-bottom: 1rem;
+    text-indent: 1rem;
+}
+
+section#light.login-panel form input::placeholder {
+    color: #181818;
+    font-family: 'Rubik', sans-serif;
+    opacity: 0.5;
+}
+
+.login-panel form button {
+    background: linear-gradient(90deg, #21758d, #b16873);
+    border: none;
+    border-radius: 0.5rem;
+    color: whitesmoke;
+    font-size: 0.8rem;
+    font-weight: 700;
+    height: 2rem;
+    transition: ease-in-out 0.5s;
+}
+
+.login-panel form button:hover {
+    opacity: 0.5;
+}
+
+.login-panel a {
+    color: #21758d;
+    font-size: 0.8rem;
+    text-decoration: none;
+}
+
+
+
+/* dark mode */
+
+section#dark.login-panel {
+    align-items: center;
+    background-color: #333333;
+    color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: space-evenly;
+    padding: 25vh 0 10vh 0;
+    width: 100%;
+}
+
+section#dark.login-panel form {
+    background-color: #333333;
+    border-radius: 0.5rem;
+    box-shadow: 0 0 30px 0 #1f1f1f;
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    width: 50%;
+}
+
+section#dark.login-panel form input {
+    background-color: #181818;
+    border: none;
+    border-radius: 0.5rem;
+    color: whitesmoke;
+    font-size: 0.8rem;
+    height: 2rem;
+    margin-bottom: 1rem;
+    text-indent: 1rem;
+}
+
+section#dark.login-panel form input::placeholder {
+    color: whitesmoke;
+    font-family: 'Rubik', sans-serif;
+    opacity: 0.5;
+}
+
+
+
+
+
+@media (max-width:1024px) {
+
+    section#light.login-panel form,
+    section#dark.login-panel form {
+        width: 75%;
+    }
+}

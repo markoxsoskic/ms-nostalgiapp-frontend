@@ -1,0 +1,144 @@
+.post-panel {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    height: 100vh;
+    overflow-x: hidden;
+    position: relative;
+    width: 100%;
+}
+
+.post-panel img {
+    display: flex;
+    height: 100%;
+    max-width: 40%;
+    object-fit: cover;
+    overflow: hidden;
+    padding-top: 15vh;
+}
+
+section#light.post-panel .event-info {
+    align-items: flex-start;
+    background-color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20vh 6vmax 10vh 3vmax;
+    height: 100%;
+    width: 60%;
+    overflow-y: scroll;
+}
+
+.post-panel .event-info::-webkit-scrollbar {
+    display: none;
+}
+
+.post-panel .event-info div:nth-of-type(1) {
+    width: 100%;
+}
+
+.post-panel h1 {
+    font-size: 3rem;
+    margin-bottom: 3rem;
+}
+
+.location-and-date {
+    display: flex;
+    flex-direction: row;
+    font-size: 1rem;
+    justify-content: space-between;
+    margin-bottom: 1.5rem;
+    font-weight: bolder;
+    width: 100%;
+}
+
+.location-and-date span:nth-of-type(2) {
+    text-align: right;
+}
+
+.post-panel .memory-description {
+    font-size: 1rem;
+    font-weight: 300;
+    width: 100%;
+}
+
+.post-panel .event-info div:nth-of-type(2) {
+    margin-top: 3rem;
+    width: 100%;
+}
+
+section#light.post-panel a {
+    color: #21758d;
+    text-decoration: none;
+
+}
+
+
+
+/* dark mode */
+
+section#dark.post-panel .event-info {
+    align-items: flex-start;
+    background-color: #333333;
+    color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20vh 6vmax 10vh 3vmax;
+    height: 100%;
+    width: 60%;
+    overflow-y: scroll;
+}
+
+section#dark.post-panel a {
+    color: #21758d;
+    text-decoration: none;
+
+}
+
+
+
+
+
+@media (max-width:1024px) {
+    .post-panel {
+        flex-direction: column;
+        min-height: 75vh;
+    }
+
+    .post-panel::-webkit-scrollbar {
+        display: none;
+    }
+
+    .post-panel img {
+        min-height: 50vh;
+        min-width: 100%;
+    }
+
+    .post-panel .event-info::-webkit-scrollbar {
+        display: none;
+    }
+
+    section#dark.post-panel .event-info {
+        align-items: center;
+        background-color: #333333;
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        min-width: 100%;
+        overflow-y: scroll;
+        padding: 5vh 6vmax 10vh 6vmax;
+    }
+
+    section#light.post-panel .event-info {
+        align-items: center;
+        background-color: whitesmoke;
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        min-width: 100%;
+        overflow-y: scroll;
+        padding: 5vh 6vmax 10vh 6vmax;
+    }
+}
